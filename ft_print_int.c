@@ -8,8 +8,8 @@ int	ft_print_int(long n)
 	count = 0;
 	if (n < 0)
 	{
-		n = -n;
 		count += write(1, "-", 1);
+		n = -n;
 	}
 	if (n > 9)
 	{
